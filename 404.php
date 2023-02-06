@@ -12,6 +12,7 @@
 
 <body id="not-found">
 <main>
+    <img src="Content/img/lambda-logo-white.svg" alt="lambda-logo" class="logo">
     <div class="error-code">
         <div>4</div>
         <div>0</div>
@@ -26,6 +27,7 @@
         <span class="word">n’existe</span>
         <span class="word">pas</span>
     </p>
+
 
     <!--
     Lorem

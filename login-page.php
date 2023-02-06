@@ -30,4 +30,4 @@ if(isset($_POST['sub'])) {
     <input type="submit" name="submit" value="Login">
     <input type="submit" name="sub" value="Login">
 </form>
-<script src="login_page.js"></script>
+<script src="Content/js/login_page.js"></script>
