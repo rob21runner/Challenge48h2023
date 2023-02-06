@@ -11,19 +11,36 @@ html, body {
   height: 100%;
 }
 
-main#not-found {
+body#not-found {
+  overflow: hidden;
+}
+body#not-found main {
   width: 100%;
   height: 100%;
   display: grid;
   place-content: center;
+  position: relative;
+  z-index: 2;
+  color: white;
 }
-main#not-found .error-code {
+body#not-found main .error-code {
   font-size: 124px;
   text-align: center;
   font-weight: 900;
 }
-main#not-found p {
+body#not-found main p {
   font-size: 20px;
+}
+body#not-found video {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: grayscale(1) blur(15px);
 }
 
 /*# sourceMappingURL=style.css.map */

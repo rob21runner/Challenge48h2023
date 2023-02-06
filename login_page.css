@@ -49,7 +49,6 @@ input[name="submit"] {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-
 }
 
 input[name="submite"]:hover {
@@ -57,7 +56,6 @@ input[name="submite"]:hover {
 }
 input[name="sub"] {
     width: 100%;
-    padding: 10px;
     font-size: 18px;
     background-color: #ffffff;
     color: #ffffff;
