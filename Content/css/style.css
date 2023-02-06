@@ -27,9 +27,18 @@ body#not-found main .error-code {
   font-size: 124px;
   text-align: center;
   font-weight: 900;
+  display: flex;
+  column-gap: 4px;
+  justify-content: center;
+}
+body#not-found main .error-code div {
+  display: inline-block;
 }
 body#not-found main p {
   font-size: 20px;
+}
+body#not-found main p span {
+  display: inline-block;
 }
 body#not-found video {
   z-index: 0;
@@ -41,6 +50,7 @@ body#not-found video {
   aspect-ratio: 16/9;
   object-fit: cover;
   filter: grayscale(1) blur(15px);
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

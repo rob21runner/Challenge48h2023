@@ -30,10 +30,21 @@ body {
         font-size: 124px;
         text-align: center;
         font-weight: 900;
+        display: flex;
+        column-gap: 4px;
+        justify-content: center;
+
+        div {
+          display: inline-block;
+        }
       }
 
       p {
         font-size: 20px;
+
+        span {
+          display: inline-block;
+        }
       }
     }
 
@@ -47,6 +58,7 @@ body {
       aspect-ratio: 16/9;
       object-fit: cover;
       filter: grayscale(1) blur(15px);
+      opacity: 0;
     }
   }
 }

@@ -12,12 +12,22 @@
 
 <body id="not-found">
 <main>
-    <div class="error-code">404</div>
-    <p>Nous sommes désolés, mais la page que vous essayez de chercher n’existe pas.</p>
+    <div class="error-code">
+        <div>4</div>
+        <div>0</div>
+        <div>4</div>
+    </div>
+    <p id="error-message">
+        <span class="word">Nous</span>
+        <span class="word">sommes</span>
+        <span class="word">désolés,</span>
+        <span class="word">cette</span>
+        <span class="word">page</span>
+        <span class="word">n’existe</span>
+        <span class="word">pas</span>
+    </p>
 
     <!--
-    Trouvez la phrase phrase magique...
-
     Lorem
     s'il
     Le
@@ -46,7 +56,5 @@
 <video src="Content/media/404-loop.webm" autoplay muted loop></video>
 </body>
 
-<script>
-    document.querySelector('video').playbackRate = 0.5;
-</script>
+<script src="Content/js/404Animations.js"></script>
 </html>
