@@ -1,3 +1,3 @@
 <?php
-header("Location: login_page");
+header("Location: login-page");
 exit;

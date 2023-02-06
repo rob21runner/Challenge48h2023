@@ -1,0 +1,48 @@
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: 'Satoshi', sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: #23b2a4;
+    top:0;
+    width:100%;   
+    justify-content: space-between;
+}
+img{
+    height: 100px;
+    width: 170px;
+}
+.logo{
+    display: flex;
+    margin-right: 30px;
+}
+.welcome{
+    margin-left: 10px;
+}
+.next{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    /* margin-top: 100000%; */
+}
+.presentation{
+    text-align: center;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+}
+button {
+    display: inline-block;
+    background-color: #1d1d1e;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    margin: 5px;
+  }
