@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Satoshi", sans-serif;
+  user-select: none;
 }
 
 html, body {
@@ -49,8 +50,84 @@ body#not-found video {
   transform: translate(-50%, -50%);
   aspect-ratio: 16/9;
   object-fit: cover;
-  filter: grayscale(1) blur(15px);
+  filter: grayscale(1) blur(20px);
   opacity: 0;
+}
+body#not-found .logo {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  aspect-ratio: 1;
+  width: 32px;
+  transform: translateX(-50%);
+}
+body#home {
+  display: grid;
+  place-content: center;
+}
+body#home .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  row-gap: 24px;
+}
+body#home .container .logos {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-weight: 900;
+}
+body#home .container .logos .logo {
+  width: 72px;
+}
+body#home .container .logos span:last-of-type {
+  font-size: 28px;
+  font-weight: 700;
+  color: #23b2a4;
+}
+body#home .container .presentation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+body#home .container .presentation p {
+  text-align: center;
+}
+body#home .container .presentation span {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+body#home .container button {
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: #23b2a4;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.8s ease;
+  will-change: transform, box-shadow;
+}
+body#home .container button:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
