@@ -98,7 +98,7 @@ On retrouve le lien d'un doc confidentiel dans lequel on félicite le joueur et 
 
 ## Easter-egg
 
-![](C:\Users\kioki\AppData\Roaming\marktext\images\984c34d8f2250f48f465b0856ce3ca0384c1989f.png)
+![](./YU9gjJN.png)
 
 Ici nous avons Lambda and co
 

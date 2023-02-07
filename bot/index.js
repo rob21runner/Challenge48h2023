@@ -2,7 +2,8 @@ const Discord = require('discord.js'),
     client = new Discord.Client({
         fetchAllMembers: true,
         partials: ["MESSAGE","REACTION"]
-    })
+    }),
+    config = require('./config.json')
 client.on('ready', () => {
     console.log('Je suis en ligne!')
     createJson()
@@ -14,7 +15,7 @@ client.on('error', () => {
     //LogGen("Erreur","Une Erreur est survenue !","#ff3838")
 })
 
-client.login("MTA3MjE1MzU4NjU4ODQ1MDgzNw.GhsoxX.eKU3EBtlGLT5ZDsrRSzJzA44XiUaHdC0aUiJBc")
+client.login(config.token)
 client.commands = new Discord.Collection()
 
 premier = true
