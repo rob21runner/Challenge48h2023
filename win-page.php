@@ -8,7 +8,8 @@ if (isset($_POST['submit'])) {
     if ($username == 'XxDylanKillerxX' && $password == 'Je suis dylan le Kikoo') {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header('Location:win-page.php');
+        require_once('./Content/scripts/validate_step.php');
+        header('Location:win-page');
     } else {
         echo "Invalid username or password";
     }

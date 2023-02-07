@@ -34,7 +34,7 @@
         </p>
     </div>
 
-    <button onclick="window.location='404.php'">Page Suivante</button>
+    <button onclick="window.location='404'">Page Suivante</button>
 </main>
 </body>
 </html>

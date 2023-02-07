@@ -1,23 +1,36 @@
 <?php
-
-require('Content/scripts/check_previous_step.php');
-
+session_start();
 if (isset($_POST['sub'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
     // Connect to database to verify username and password
-    $conn = mysqli_connect('hostname', 'username', 'password', 'database_name');
-    $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-    $result = mysqli_query($conn, $query);
+    $host = "127.0.0.1";
+    $dbname = "challenge48h";
+    $user = "user";
+    $password = "P@ssword";
 
-    if (mysqli_num_rows($result) > 0) {
+    try {
+        $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmt = $conn->prepare("SELECT * FROM Challenge WHERE user = '$username'");
+        $stmt->execute();
+
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        print_r($result);
+
+
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+
+    if (!empty($result)) {
         // Set session variable
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
 
         // Redirect to home page
-        header('Location: home.php');
+        header('Location:user-page');
     } else {
         echo "Invalid username or password";
     }

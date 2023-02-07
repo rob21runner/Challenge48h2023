@@ -1,6 +1,5 @@
 Options +MultiViews +FollowSymLinks
 RewriteEngine On
-RewriteBase /
-RewriteRule ^(.*)/404/lorem-ipsum-dolor-sit-amet-consectetur$ $1/lorem-ipsum-dolor-sit-amet-consectetur [R,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+ErrorDocument 404 http://localhost/ynov/Challenge48h2023/404

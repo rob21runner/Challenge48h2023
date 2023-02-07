@@ -47,4 +47,4 @@ video.play().then(() => {
 
 let HINT_TIMEOUT_IN_SECONDS = 60 * 3;
 
-setTimeout(() => alert("Les bons mots, le bon ordre et on navigue. Avec le .php pour finir bien-sûr"), HINT_TIMEOUT_IN_SECONDS * 1000);
+setTimeout(() => alert("À la place du 404, les bons mots, le bon ordre et on navigue"), HINT_TIMEOUT_IN_SECONDS * 1000);

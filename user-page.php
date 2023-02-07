@@ -1,28 +1,3 @@
-<?php
-//
-//require('Content/scripts/check_previous_step.php');
-//
-//if (isset($_POST['sub'])) {
-//    $username = $_POST['username'];
-//    $password = $_POST['password'];
-//
-//    // Connect to database to verify username and password
-//    $conn = mysqli_connect('hostname', 'username', 'password', 'database_name');
-//    $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-//    $result = mysqli_query($conn, $query);
-//
-//    if (mysqli_num_rows($result) > 0) {
-//        // Set session variable
-//        $_SESSION['loggedin'] = true;
-//        $_SESSION['username'] = $username;
-//
-//        // Redirect to home page
-//        header('Location: home.php');
-//    } else {
-//        echo "Invalid username or password";
-//    }
-//}
-//?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +8,7 @@
     <title>Document</title>
 </head>
 <body id="admin-page">
-<h1>Vous êtes utilisateur mais pas administrateur, dommage...</h1>
+<h1>Vous êtes utilisateur, mais pas administrateur, dommage...</h1>
 </body>
 </html>
 
