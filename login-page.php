@@ -43,7 +43,7 @@ if (isset($_POST['sub'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Content/css/style.css">
-    <title>Document</title>
+    Challenge 48h - Groupe 6
 </head>
 <body id="login-page">
 <form action="" method="post">
