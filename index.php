@@ -12,13 +12,13 @@
 <main class="container">
     <div class="logos">
         <img src="logo_ynov_campus_aix.png" alt="aixlogo" class="logo">
-        <span>x</span>
+        <span>&</span>
         <span>48h</span>
     </div>
 
     <div class="presentation">
         <p>
-            Lambda-Corporation est une Entreprise "fournisseur" qui aide les entreprises "Maitresses" à résoudre des
+            <span class="accent bold">Lambda and Co.</span> est une Entreprise "fournisseur" qui aide les entreprises "Maitresses" à résoudre des
             problèmes au sein de leurs sites Webs.
             <br><br>
             Vous êtes un Hacker et cherchez à infiltrer via le web l'entreprise "maitresse" Ynov.
@@ -28,11 +28,11 @@
             Lambda-Corporation au travers de diverses failles web et failles de sécurités, afin de remonter jusqu'à
             Ynov.
             <br><br>
-            <span>Bonne chance!</span>
+            <span class="bold">Bonne chance!</span>
         </p>
     </div>
 
-    <button onclick="window.location='404 '">Page Suivante</button>
+    <button onclick="window.location='404.php'">Page Suivante</button>
 </main>
 </body>
 </html>

@@ -1,5 +1,8 @@
 @import "https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap";
 
+$accent-color: #23b2a4;
+$lambda-accent: #333;
+
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +15,52 @@
 html, body {
   width: 100%;
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 
 body {
+  .popup {
+    .modal {
+      position: absolute;
+      z-index: 999;
+      background-color: #dddddd;
+      max-width: 35vw;
+      padding: 48px 64px;
+      border-radius: 15px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      font-weight: 500;
+
+      .button {
+        background-color: $accent-color;
+        color: white;
+        padding: 8px 16px;
+        width: fit-content;
+        margin: 16px auto 0;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+
+
+    .backdrop {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #333333;
+      opacity: 0.7;
+      left: 0;
+      top: 0;
+      backdrop-filter: blur(50px);
+      z-index: 998;
+    }
+  }
+
   &#not-found {
     overflow: hidden;
 
@@ -98,7 +143,7 @@ body {
         span:last-of-type {
           font-size: 28px;
           font-weight: 700;
-          color: #23b2a4;
+          color: $accent-color;
         }
       }
 
@@ -114,8 +159,14 @@ body {
         }
 
         span {
-          font-weight: 900;
-          text-transform: uppercase;
+          &.accent {
+            color: $accent-color;
+          }
+
+          &.bold {
+            font-weight: 900;
+            text-transform: uppercase;
+          }
         }
       }
 
@@ -125,7 +176,7 @@ body {
         border-radius: 8px;
         font-weight: 800;
         cursor: pointer;
-        background-color: #23b2a4;
+        background-color: $accent-color;
         color: white;
         text-transform: uppercase;
         transition: all 0.8s ease;
@@ -136,6 +187,70 @@ body {
           box-shadow: 0 0 30px rgba(#000000, 0.3);
         }
       }
+    }
+  }
+
+  &#login-page {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .container {
+      width: 400px;
+      height: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    form {
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      background-color: transparent;
+    }
+
+    input[name="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      background-color: $lambda-accent;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    input[name="submite"]:hover {
+      background-color: #000;
+    }
+
+    input[name="sub"] {
+      width: 100%;
+      font-size: 18px;
+      background-color: #ffffff;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
     }
   }
 }

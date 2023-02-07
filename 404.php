@@ -1,3 +1,8 @@
+<?php
+session_start();
+session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -31,27 +36,29 @@
 
     <!--
     Lorem
-    s'il
-    Le
-    plait
-    quick
-    jumps
     amet
-    brown
-    login
     sit
     consectetur
-    over
-    the
-    vrai
-    dog
     ipsum
-    please
-    lazy
     dolor
+
+    vrai
+    plait
+    login
+    plait
+    Le
     vous
+    s'il
+
+    dog
+    brown
+    lazy
     the
+    quick
+    the
+    jumps
     fox
+    over
     -->
 </main>
 

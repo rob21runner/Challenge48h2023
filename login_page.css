@@ -10,56 +10,7 @@ body {
     height: 100vh;
 }
 
-.container {
-    width: 400px;
-    height: 400px;
-    text-align: center;
-}
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
 
-form {
-    background-color: #fff;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    border-radius: 10px;
-}
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    border: none;
-    border-bottom: 2px solid #ddd;
-    background-color: transparent;
-}
-
-input[name="submit"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-input[name="submite"]:hover {
-    background-color: #000;
-}
-input[name="sub"] {
-    width: 100%;
-    font-size: 18px;
-    background-color: #ffffff;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-}
 
