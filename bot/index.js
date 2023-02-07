@@ -36,7 +36,7 @@ client.on('message', message => {
     if (message.content.startsWith("λhacker")) {
         const member = message.guild.member(message.author.id)
         member.roles.add("1072465183420710932")
-        client.channels.cache.get("1072468802903736340").send("<@1072080475914502144> <@"+ message.author.id +"> a finit!")
+        client.channels.cache.get("1072468802903736340").send("<@"+ message.author.id +"> a finit!")
     }
 })
 

@@ -1,10 +1,28 @@
 # Fiche réponse Lambda Corporation
 
 ```
-
+https://github.com/rob21runner/Challenge48h2023
 ```
 
- 
+### Membres
+
+* GUERARD Robin
+
+* SIRAUD Quentin
+
+* KOELLSCH Lucas
+
+* NDOYE Mohamed
+
+* VASSELET Iannis
+
+* SANCHEZ Raphael
+
+* FELLAHY Pierre-elias
+
+* GOMEZ Léo
+
+* MARQUIER Florian
 
 ## Page d'accueil
 
@@ -111,3 +129,7 @@ Ici nous avons Lambda and co
 La dernière commande `λhacker` cela sous entends que pour effectuer une commande avec le bot il faut utiliser λ.
 
 Donc la commande est `λ&co`
+
+## Hebergement
+
+Pour l'hébergement nous avons créé une vm avec debian 11 installé dessus. nous avons configuré un apache pour héberger le code php et la bas mysql. Pour pouvoir y accéder nous avons du faire du port forwarding pour rediriger les connexion arrivant sur la machine sur la vm  car il n'est pas possible de se connecter en bridge et nous some obliger d'utiliser NAT qui crée un réseaux sur la machine hote.
