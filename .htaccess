@@ -1,2 +1,6 @@
+Options +MultiViews +FollowSymLinks
 RewriteEngine On
-RewriteRule ^404/lorem-ipsum-dolor-sit-amet-consectetur$ lorem-ipsum-dolor-sit-amet-consectetur.php
+RewriteBase /
+RewriteRule ^(.*)/404/lorem-ipsum-dolor-sit-amet-consectetur$ $1/lorem-ipsum-dolor-sit-amet-consectetur [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

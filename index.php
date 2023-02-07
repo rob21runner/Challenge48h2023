@@ -29,6 +29,8 @@
             Ynov.
             <br><br>
             <span class="bold">Bonne chance!</span>
+            <br>
+            <span class="discrete">P.S: Un easter egg est à trouver durant votre infiltration</span>
         </p>
     </div>
 
