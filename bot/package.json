@@ -1,0 +1,21 @@
+{
+  "name": "lambdabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index 0.0.0.0:$PORT",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rob_runner",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.6.0",
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.4.0",
+    "node-fetch": "^3.0.0",
+    "setimmediate": "^1.0.5",
+    "yt-search": "^2.10.1",
+    "ytdl-core": "^4.9.1"
+  }
+}
